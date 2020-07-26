@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Search Application</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app" class="container">
+    <h1 class="text-center">Movie Search Application</h1>
+    
+    <br>
+
+    <div class="row">
+      <div class="col-md-4 offset-md-4">
+        <input type="text" class="form-control" id="search_field" placeholder="Search...">
+
+        <input type="radio" class="type" name="type" value="all" checked id="all"> <label for="all">All</label> &nbsp;
+        <input type="radio" class="type" name="type" value="movie" id="movie"> <label for="movie">Movies</label> &nbsp;
+        <input type="radio" class="type" name="type" value="series" id="series"> <label for="series">Series</label>
+      </div>
+    </div>
+    
+
+    <br>
+    <br>
+
+    <div id="loading">
+      <h1 class="text-center">Results are loading...</h1>
+    </div>
+
+    <div id="movies"  class="row">
+
+    </div>
+  </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://unpkg.com/axios/dist/axios.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
